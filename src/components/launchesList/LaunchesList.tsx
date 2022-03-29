@@ -32,7 +32,7 @@ const LaunchesList: React.FC = () => {
               <Waypoint
                 onEnter={() =>
                   fetchMore({
-                    variables: { limit: 10, offset: 10 },
+                    variables: { limit: 10, offset: data.launchesPast.length },
                   })
                 }
               />
